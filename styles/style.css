@@ -129,9 +129,195 @@ body {
   height: 2.5em;
 }
 
-/***=== Error Message ===***/
+/***=== Error Message ===*****************************************************/
 
 .errorMessageDevZero {
   font-size: 0.5em;
   color: #c63448;
+}
+
+/***=== @Media ===***********************************************************/
+
+@media (max-width: 1800px) {
+  * {
+    font-size: 0.98em;
+  }
+
+  .num {
+    width: 16%;
+    height: 1.4em;
+    border-radius: 8px;
+    font-size: 2.3em;
+  }
+
+  .del,
+  .reset {
+    font-size: 1.6em;
+    height: 2.3em;
+  }
+
+  .is {
+    padding-bottom: 1%;
+  }
+
+  .display {
+    padding-right: 9%;
+    padding-top: 3%;
+    height: 10%;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 2.8em;
+    margin-bottom: 2%;
+  }
+
+  .title {
+    margin: 5%;
+  }
+
+  .calc {
+    font-size: 1.8em;
+    margin-top: -13px;
+  }
+
+  .switch_block {
+    width: 47%;
+    gap: 40%;
+  }
+
+  .themes_number {
+    padding-bottom: 9%;
+  }
+
+  .switch {
+    border-radius: 14px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1100px) {
+  * {
+    font-size: 0.98em;
+  }
+
+  .num {
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    width: 16%;
+    height: 1.4em;
+    border-radius: 8px;
+    font-size: 2.3em;
+  }
+
+  .del,
+  .reset {
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    font-size: 1.4em;
+    height: 2.2em;
+  }
+
+  .is {
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    padding-bottom: 0.9%;
+    font-size: 1.9em;
+  }
+
+  .display {
+    padding-right: 9%;
+    padding-top: 3%;
+    height: 10%;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 2.8em;
+    margin-bottom: 2%;
+  }
+
+  .title {
+    margin: 6%;
+  }
+
+  .calc {
+    font-size: 1.6em;
+    margin-top: -9px;
+  }
+
+  .switch_block {
+    width: 57%;
+    gap: 38%;
+  }
+
+  .themes_number {
+    padding-bottom: 8%;
+  }
+
+  .switch {
+    border-radius: 14px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 950px) {
+  * {
+    font-size: 0.95em;
+  }
+
+  .num {
+    margin: 0.7% 0.7% 0.7% 0.7%;
+    width: 16%;
+    height: 1.3em;
+    border-radius: 8px;
+    font-size: 2.2em;
+  }
+
+  .del,
+  .reset {
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    font-size: 1.3em;
+    height: 2.2em;
+  }
+
+  .is {
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    padding-top: 0.8%;
+    margin-top: 0.5%;
+    font-size: 1.9em;
+  }
+
+  .display {
+    padding-right: 11%;
+    padding-top: 3%;
+    height: 10%;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 2.8em;
+    margin-bottom: 2%;
+  }
+
+  .title {
+    margin: 6%;
+    width: 60%;
+  }
+
+  .calc {
+    font-size: 1.6em;
+    margin-top: -9px;
+  }
+
+  .switch_block {
+    width: 100%;
+    gap: 40%;
+  }
+
+  .themes_number {
+    padding-bottom: 8%;
+    font-size: 1em;
+  }
+
+  .switch {
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  .theme {
+    text-transform: uppercase;
+    padding-left: 15%;
+  }
 }
