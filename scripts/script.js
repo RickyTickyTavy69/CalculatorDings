@@ -96,7 +96,7 @@ machine.addEventListener("click", (event) => {
           num1 = Number(num1) / Number(num2);
           break;
 
-        case (count = "*"):
+        case (count = "x"):
           num1 = Number(num1) * Number(num2);
           break;
       }
@@ -111,7 +111,21 @@ machine.addEventListener("click", (event) => {
 
   if (event.target.classList.contains("is")) {
     console.log("is");
-    result = Number(num1) + Number(num2);
+    switch (count) {
+      case (count = "+"):
+        result = Number(num1) + Number(num2);
+        break;
+      case (count = "-"):
+        result = Number(num1) - Number(num2);
+        break;
+      case (count = "x"):
+        result = Number(num1) * Number(num2);
+        break;
+      case (count = "/"):
+        result = Number(num1) / Number(num2);
+        break;
+    }
+
     display.innerHTML = result;
     count = 0;
     done = true;
@@ -119,15 +133,3 @@ machine.addEventListener("click", (event) => {
     firstHalve = false;
   }
 });
-
-/* num2 должен создаватья как раз при нажатии равно, так как иначе не известно закончил ли юзер писать
-второе число. Или придумать какой нибудь метод между этими двумя. Например, если есть num1 и count,
-то если нажимается = То считается count2 а если номер, то считается num1 + innerHtml.
-
-
-
-/* NUM2 Должен записыватья не при нажатии равно, а при нажатии на номер, если уже есть num1 и count,
-то второй номер должен автомфтически записываться в Num2. На тот случай, если нажимается 5+5+5+5
-Например, он должен переписывать num1, добавляя в него новые значения, если уже есть Num1, count и
-num2
-*/
