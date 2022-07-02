@@ -102,9 +102,23 @@ machine.addEventListener("click", (event) => {
       }
 
       num2 = 0;
+      count = event.target.innerHTML;
       console.log("update", num1, count, num2);
-      display.innerHTML = num1;
-      update = true;
+      if (num1 === Infinity || isNaN(num1)) {
+        const Error = document.createElement("P");
+        Error.innerHTML = "Error! Devided by zero. Press RESET";
+        Error.classList.add("errorMessageDevZero");
+        display.innerHTML = "";
+        display.appendChild(Error);
+        count = 0;
+        done = true;
+        num2 = 0;
+        num1 = 0;
+        firstHalve = false;
+      } else {
+        display.innerHTML = num1;
+        update = true;
+      }
     }
   }
   /******************DEFINES COUNT & NUM1 IF COUNT IS PRESSED ***/
@@ -125,11 +139,20 @@ machine.addEventListener("click", (event) => {
         result = Number(num1) / Number(num2);
         break;
     }
-
-    display.innerHTML = result;
+    console.log("result", result);
+    if (result === Infinity || isNaN(result)) {
+      const Error = document.createElement("P");
+      Error.innerHTML = "Error! Devided by zero. Press RESET";
+      Error.classList.add("errorMessageDevZero");
+      display.innerHTML = "";
+      display.appendChild(Error);
+    } else {
+      display.innerHTML = result;
+    }
     count = 0;
     done = true;
     num2 = 0;
     firstHalve = false;
+    num1 = 0;
   }
 });

@@ -128,3 +128,10 @@ body {
   font-size: 1.5em;
   height: 2.5em;
 }
+
+/***=== Error Message ===***/
+
+.errorMessageDevZero {
+  font-size: 0.5em;
+  color: #c63448;
+}
